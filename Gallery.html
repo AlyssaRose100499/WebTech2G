@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 </head>
@@ -34,8 +35,6 @@ h3.header{
   font-size:21px;
   margin-left: 20px;
   color: white;
-  border: #fff;
-  border-style: double;
   text-align: center;
 }
 #header #name{
@@ -60,8 +59,27 @@ ul a:hover{
   border-top: 1px solid #fff;
   text-align: center;
   color: #fff;
+}
+.maindiv{
+  width:70%;
+  height:400px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  background-image: url(images/image.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 1px 2px 10px 5px black;
+  animation: slider 20s infinite ;
 
-
+}
+@keyframes slider{
+  20%{ background-image: url(images/image.png); }
+  40%{ background-image: url(images/image1.png); }
+  60%{ background-image: url(images/image2.png); }
+  80%{ background-image: url(images/image3.png);}
+  100%{ background-image: url(images/image4.png);}
 }
 
 
@@ -73,16 +91,21 @@ ul a:hover{
     <ul>
       <a href="Contact.html">Contact</a>
       <a href="Resume.html">Resume</a>
-      <a href="About.html">About</a>
+      <a href="Gallery.html">Gallery</a>
       <a class="active" href="Home.html">Home</a>
-      <h3 class="header"> Alyssa Rose C. <br> Baquedqued </h3>
+      <h3 class="header"> Alyssa Rose <br>C.  Baquedqued </h3>
       </ul>
   </div>
+    <div class="maindiv">
+
+
+    </div>
 <footer id="footer">
   <p>©Copyright 2018 - 2019. <br>
   All rights reserved. </p>
   <hr>
 
 </footer>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

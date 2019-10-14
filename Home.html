@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
 <style type="text/css">
 body {
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(abstract.png);
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/abstract.png);
 	background-repeat: no-repeat;
 	height:100vh;
 	background-size: cover;
@@ -34,8 +35,7 @@ h3.header{
 	font-size:21px;
 	margin-left: 20px;
 	color: white;
-	border: #fff;
-	border-style: double;
+	
 	text-align: center;
 }
 #header #name{
@@ -65,13 +65,22 @@ ul a:hover{
 }
 .yes{
 	position: absolute;
-	top: 30%;
-	left: 28%;
-	transform: translate (-50%,-50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	border-radius: 75px;
+	border: 5px solid white;
+
+
+
+
 }
 .yes h1{
 		color: #fff;
-		font-size: 70px;
+		font-size: 100px;
+		font-family: courier;
+
 }
 
 </style>
@@ -80,9 +89,9 @@ ul a:hover{
 		<ul>
   		<a href="Contact.html">Contact</a>
   		<a href="Resume.html">Resume</a>
-  		<a href="About.html">About</a>
+  		<a href="Gallery.html">Gallery</a>
   		<a class="active" href="Home.html">Home</a>
-  		<h3 class="header"> Alyssa Rose C. <br> Baquedqued </h3>
+  		<h3 class="header"> Alyssa Rose<br> C.  Baquedqued </h3>
   		</ul>
 	</div>
 	<div class="yes">
@@ -94,5 +103,6 @@ ul a:hover{
 	<hr>
 
 </footer>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
